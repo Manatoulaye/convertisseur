@@ -1,52 +1,151 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="convertisseur de devise.css">
     <title>Convertisseur de devises</title>
-   <link rel="stylesheet" href="convertisseur de devise.css">
 </head>
 <body>
-    <h1>Convertisseur de devises</h1>
-    <div class="converter">
-        <label for="from">De :</label>
-        <select id="from">
-            <option value="USD">Dollar américain (USD)</option>
-            <option value="EUR">Euro (EUR)</option>
-            <option value="GBP">Livre sterling (GBP)</option>
-            <option value="CAD">Dollar canadien (CAD)</option>
-            <option value="AUD">Dollar australien (AUD)</option>
-            <option value="NZD">Dollar néo-zélandais (NZD)</option>
-            <option value="SEK">Couronne suédoise (SEK)</option>
-            <option value="NOK">Couronne norvégienne (NOK)</option>
-            <option value="DKK">Couronne danoise (DKK)</option>
-            <option value="TRY">Livre turque (TRY)</option>
-            <option value="RUB">Rouble russe (RUB)</option>
-            <option value="CNY">Yuan chinois (CNY)</option>
-            <option value="KRW">Yen sud-coréen (KRW)</option>
-            <option value="XOF">Franc CFA (XOF)</option>
-        </select>
-        <input type="number" id="amount">
-        <label for="to">À :</label>
-        <select id="to">
-            <option value="USD">Dollar américain (USD)</option>
-            <option value="EUR">Euro (EUR)</option>
-            <option value="GBP">Livre sterling (GBP)</option>
-            <option value="CAD">Dollar canadien (CAD)</option>
-            <option value="AUD">Dollar australien (AUD)</option>
-            <option value="NZD">Dollar néo-zélandais (NZD)</option>
-            <option value="SEK">Couronne suédoise (SEK)</option>
-            <option value="NOK">Couronne norvégienne (NOK)</option>
-            <option value="DKK">Couronne danoise (DKK)</option>
-            <option value="TRY">Livre turque (TRY)</option>
-            <option value="RUB">Rouble russe (RUB)</option>
-            <option value="CNY">Yuan chinois (CNY)</option>
-            <option value="KRW">Yen sud-coréen (KRW)</option>
-            <option value="XOF">Franc CFA (XOF)</option>
-        </select>
-        <button onclick="convert()">Convertir</button>
+    <nav class="nav">
+        <div class="group">
+            <img src="img/logoToulay1.png" alt="">
+        </div>
+        <div class="group1">
+            <ul>
+                <li><a href="" class="home">ACCUEIL</a></li>
+                <li><a href="">CONVERTISSEUR</a></li>
+                <li><a href="">GRAPHIQUE</a></li>
+                <li><a href="">OUTILS</a></li>
+                <li><a href="">RESSOURCE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="group2">
+            <a href="">Login</a>/ <a href="">Register</a>
+
+            <a href=""><i class="fas fa-search icon"></i></a>
+
+            <a href=""><i class="fas fa-heart icon">
+                    <span class="badge">2</span>
+                </i></a>
+
+            <a href=""><i class="fas fa-shopping-bag icon">
+                    <span class="badge">2</span>
+                </i></a>
+
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <div class="header-content">
+          <!-- <h1>Description au Milieu</h1> -->
+        </div>
+      </header>
+
+      <section>
+        <div class="nav2">
+            <div class="nav-column"><a href="">Convertir</a></div>
+            <div class="nav-column"><a href="">Envoyer</a></div>
+            <div class="nav-column"><a href="">Graphique</a></div>
+            <div class="nav-column"><a href="">Alerte</a></div>
+        </div>
+        <h1>Convertisseur de devises</h1>
+      
+      <div class="converter-container">
+    <label for="amount">Montant:</label>
+    <input type="number" id="amount">
+    
+    <label for="from">De:</label>
+    <select id="from">
+        <option value="USD">Dollar américain (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="GBP">Livre sterling (GBP)</option>
+        <option value="JPY">Yen japonais (JPY)</option>
+        <option value="CAD">Dollar canadien (CAD)</option>
+        <option value="AUD">Dollar australien (AUD)</option>
+        <option value="CHF">Franc suisse (CHF)</option>
+        <option value="CNY">Yuan chinois (CNY)</option>
+        <option value="INR">Roupie indienne (INR)</option>
+        <option value="NZD">Dollar néo-zélandais (NZD)</option>
+        <option value="MAD">Dirham marocain (MAD)</option>
+        <option value="XOF">Franc CFA (XOF)</option> 
+    </select>
+    
+    <label for="to">À:</label>
+    <select id="to">
+        <option value="USD">Dollar américain (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="GBP">Livre sterling (GBP)</option>
+        <option value="JPY">Yen japonais (JPY)</option>
+        <option value="CAD">Dollar canadien (CAD)</option>
+        <option value="AUD">Dollar australien (AUD)</option>
+        <option value="CHF">Franc suisse (CHF)</option>
+        <option value="CNY">Yuan chinois (CNY)</option>
+        <option value="INR">Roupie indienne (INR)</option>
+        <option value="NZD">Dollar néo-zélandais (NZD)</option>
+        <option value="MAD">Dirham marocain (MAD)</option>
+        <option value="XOF">Franc CFA (XOF)</option> 
+    </select>
+    
+    <button onclick="convert()">Convertir</button>
+    
+</div>
+<p id="result"></p>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logoToulay1.png" alt="">
+          <h3 style="color: gray;">Site by: <strong>Mantoulaye gueye</strong> </h3>
     </div>
-    <div id="result"></div>
-   <script src="convertisseur de devise.js"></script>
+      <div class="footer-links">
+        <h3>QUICK LINKS</h3>
+        <ul>
+          <li>About</li>
+          <li>Blogs</li>
+          <li>Contact</li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+
+      <div class="footer-account">
+        <h3>ACCOUNT</h3>
+        <ul>
+          <li>My Account</li>
+          <li>Orders Tracking</li>
+          <li>Checkout</li>
+          <li>Wishlist</li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h3>NEWSLETTER</h3>
+        <div class="newsletter-input">
+          <input type="email" id="email" placeholder="Email">
+          <button type="submit">SUBSCRIBE</button>
+        </div>
+      
+  
+      <!-- Réseaux sociaux -->
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-google"></i>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2024 All rights reserved Mantousha Gueye | This template is made with ❤ by vito</p>
+    </div>
+  </footer>
+
+    <script src="convertisseur de devise.js"></script>
 </body>
 </html>

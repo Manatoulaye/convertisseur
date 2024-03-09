@@ -1,46 +1,291 @@
-
-    
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+body{
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    text-align: center;
-}
-
-.converter {
-    margin: 20px auto;
-    max-width: 400px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label, select, input, button {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-button {
+    background-color: #f2f2f2; /* Couleur de fond */
+  }
+  
+  /* Style for the navigation bar */
+  .nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px;
-    background-color: #007bff;
+  }
+  
+  /* Style for the logo */
+  .group img {
+    width: 80px; /* Adjust the width as needed */
+    height: auto;
+    margin-left: 30px;
+  }
+  
+  /* Style for the menu items */
+  .group1 ul {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+  }
+  
+  .group1 li {
+    margin: 0 10px;
+  }
+  
+  .group1 a {
+    color: black;
+    text-decoration: none;
+    
+    
+  }
+  .home{
+    border-bottom: solid 2px red;
+  }
+  
+  .group1 a:hover {
+    
+    border-bottom: solid 2px red;
+  }
+  
+  /* Style for the login/register and icon group */
+  .group2 a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .group2 .icon {
+    color: black;
+    font-size: 24px;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .group2 .badge {
+    background-color: red;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-#result {
-    margin-top: 20px;
+  
+  .main-header {
+    background-image: url('img/signal2.png'); 
+    background-color: rgba(169, 169, 169, 0.8); /* Couleur grise avec opacité */
+    background-size: auto;
+    background-position: top;
     text-align: center;
-}
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1;
+  }
+  
+  .header-content {
+   width: 100%;
+  }
+  
+  .header-content h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  
+  section {
+    width: 1000px;
+    height: 300px;
+    background-color: #ffffff; /* Couleur de fond du conteneur */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ombre forte */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 150px;
+    margin-top: -50px;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  .nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    padding: 10px;
+  }
+
+  .nav2 .nav-column {
+    flex: 1;
+    text-align: center;
+    color: #fff; /* Couleur du texte de la colonne */
+    border-right: 1px solid #fff; /* Bordure à droite de chaque colonne */
+    padding: 10px;
+    cursor: pointer;
+  }
+  .nav2 .nav-column a {
+    text-decoration: none;
+    color: #fff; /* Couleur du texte de la colonne */
+    cursor: pointer;
+  }
+  
+  .nav2 .nav-column:last-child {
+    border-right: none; /* Aucune bordure à droite pour la dernière colonne */
+  }
+
+  .converter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  h1 {
+    text-align: center;
+    color: gray;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+    color: gray;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    color: gray;
+  }
+  
+  button {
+    background-color: #3220d1; /* Couleur de fond du bouton */
+    color: #ffffff; /* Couleur du texte du bouton */
+    cursor: pointer;
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  button:hover {
+    background-color: #9da79d; /* Couleur de fond du bouton au survol */
+  }
+  section p{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Style du footer */
+.footer {
+    background-color: #f0f0f0; /* Couleur de fond du footer (ajustez selon vos besoins) */
+    padding: 20px; /* Espacement intérieur pour la mise en page */
+    background-color: white;
+    margin: 100px;
+    margin-bottom: 0px;
+  }
+  footer img{
+    width: 100px;
+    height: auto;
+  }
+  
+  /* Style du contenu du footer */
+  .footer-content {
+    display: flex; /* Affiche les éléments en ligne (horizontalement) */
+    flex-wrap: wrap; /* Permet de passer à une disposition multi-ligne si nécessaire */
+  }
+  
+  /* Style des sections du footer */
+  .footer-content 
+  .footer-links,
+  .footer-account,
+  .footer-newsletter {
+    flex: 1; /* Chaque section prend une largeur égale pour répartir l'espace */
+    padding: 20px; /* Espacement intérieur pour la mise en page */
+    box-sizing: border-box; /* Inclut les paddings dans la largeur de la section */
+  }
+  
+  /* Style des liens dans les sections du footer */
+  .footer-links ul,
+  .footer-account ul {
+    list-style: none; /* Supprime les puces des listes */
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-account li {
+    margin-bottom: 5px; /* Espacement vertical entre les liens */
+  }
+  
+  /* Style du texte dans les sections du footer */
+  .footer-links h3,
+  .footer-account h3 {
+    margin: 0; /* Supprime les marges par défaut */
+  }
+  
+  
+  /* Style du texte du bas du footer */
+  .footer-bottom {
+    width: 100%;
+    text-align: center; /* Centrer le texte horizontalement */
+    padding-top: 20px; /* Espacement au-dessus du texte */
+    background-color: white; /* Couleur de fond du bas du footer (ajustez selon vos besoins) */
+    border-top: 1px solid;
+    border-color: #555;
+  }
+  
+  /* Style de la partie Newsletter */
+  .footer-newsletter {
+    text-align: left; /* Centrer le contenu horizontalement */
+   
+    
+  }
+  
+  .footer-newsletter h3 {
+    margin: 0; /* Supprime les marges par défaut */
+  }
+  
+  .newsletter-input {
+    display: flex; /* Afficher le champ de saisie et le bouton en ligne */
+    justify-content: center; /* Centrer horizontalement les éléments */
+    align-items: center; /* Centrer verticalement les éléments */
+    margin-top: 20px;
+  }
+  
+  .newsletter-input input {
+    padding: 8px; /* Espacement interne du champ de saisie */
+    margin-right: -40px; /* Espacement entre le champ de saisie et le bouton */
+    border: 1px solid #ccc; /* Bordure du champ de saisie */
+    border-radius: 50px; /* Coins arrondis du champ de saisie */
+  }
+  
+  .newsletter-input button {
+    padding: 8px 20px; /* Espacement interne du bouton */
+    background-color: red; /* Couleur de fond rouge pour le bouton */
+    color: #fff; /* Couleur du texte blanc pour le bouton */
+    border: none; /* Supprime la bordure du bouton */
+    border-radius: 50px; /* Coins arrondis du bouton */
+  }
+  
+  /* Style de la partie des icônes de réseaux sociaux */
+  .social-icons {
+    display: flex; /* Affiche les icônes côte à côte */
+    justify-content: left; /* Centrer les icônes horizontalement */
+    margin-top: 20px; /* Espacement au-dessus des icônes */
+  }
+  
+  .social-icons i {
+    font-size: 24px; /* Taille des icônes  */
+    color: #333; /* Couleur des icônes  */
+    padding:  20px;
+    
+  }
